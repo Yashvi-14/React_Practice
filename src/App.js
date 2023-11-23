@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React ,{useReducer} from 'react'
+import CounterThree from './Hooks/useReducer/CounterThree'
+import ComponentA from './Hooks/useContext_UseReducer/ComponentA'
+import ComponentB from './Hooks/useContext_UseReducer/ComponentB'
+import ComponentC from './Hooks/useContext_UseReducer/ComponentC'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export const CountContext = React.createContext()
+const initialState =0
+const reducer =(state,action)=>{
+    switch(action){
+        case'increment':
+        return state + 1
+
+        case'decrement':
+        return state - 1
+
+        case'reset':
+        return initialState
+        
+        default:
+           return state
+    }
 }
 
-export default App;
+function App() {
+  const [count,dispatch]= useReducer(reducer,initialState)
+  return (
+    <div>
+  
+      <ComponentA/>
+      <ComponentB/>
+      <ComponentC/>
+    </div>
+  )
+}
+
+export default App
+

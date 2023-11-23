@@ -1,0 +1,27 @@
+
+{/* <Navbar title="TextUtils" /> */}
+{/* <TextForm heading="Enter text to Analyze"/> */}
+      {/* <About/> */}
+
+      {/* <ClassCounter/>
+      <br/>
+      <HookCounter/>
+      <br/>
+      <HookCounterTwo/>
+      <br/>
+      <HookCounterThree/>
+
+      <HookCounterFour/> */}
+      </div> 
+      {/* <ClassCounterOne/> */}
+
+      {/* <HookCounterone/> */}
+
+{/* <ClassMouse/> */}
+{/* <HookMouse/> */}
+
+{/* <MouseContainer/> */}
+{/* <IntervalClassCounter/>
+<IntervalHookCounter/> */}
+
+    {/* <DataFetching/>  */}
